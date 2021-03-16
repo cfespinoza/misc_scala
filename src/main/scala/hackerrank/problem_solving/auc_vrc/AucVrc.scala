@@ -1,5 +1,6 @@
 package hackerrank.problem_solving.auc_vrc
 
+
 import scala.math.BigDecimal.double2bigDecimal
 
 object AucVrc {
@@ -12,10 +13,11 @@ object AucVrc {
 
   // This function will be used while invoking "Summation" to compute
   // The area under the curve.
-  def f(coefficients: List[Int], powers: List[Int], x: Double): Double =
-  //Fill Up this function body
-  // To compute the value of the function
-  // For the given coefficients, powers and value of x
+
+  def f(coefficients:List[Int],powers:List[Int],x:Double):Double =
+    //Fill Up this function body
+    // To compute the value of the function
+    // For the given coefficients, powers and value of x
     if (coefficients.isEmpty && powers.isEmpty)
       0
     else
@@ -25,11 +27,11 @@ object AucVrc {
   // The Volume of revolution of the curve around the X-Axis
   // The 'Area' referred to here is the area of the circle obtained
   // By rotating the point on the curve (x,f(x)) around the X-Axis
-  def area(coefficients: List[Int], powers: List[Int], x: Double): Double =
-  //Fill Up this function body
-  // To compute the area of the circle on revolving the point
-  // (x,f(x)) around the X-Axis
-  // For the given coefficients, powers and value of x
+  def area(coefficients:List[Int],powers:List[Int],x:Double):Double =
+    //Fill Up this function body
+    // To compute the area of the circle on revolving the point
+    // (x,f(x)) around the X-Axis
+    // For the given coefficients, powers and value of x
     math.Pi * potenciaN(f(coefficients, powers, x), 2)
 
   // This is the part where the series is summed up
@@ -65,7 +67,6 @@ object AucVrc {
 
   }
    */
-
 
   // The Input-Output functions will be handled by us. You only need to concentrate your effort on the function bodies above.
 }
